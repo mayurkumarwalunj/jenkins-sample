@@ -1,2 +1,5 @@
 FROM hshar/webapp
-ADD . /var/www/html
+
+RUN rm -rf /var/www/html/index.html
+
+ADD ./index.html /var/www/html
